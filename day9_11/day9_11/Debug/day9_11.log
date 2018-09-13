@@ -1,0 +1,3 @@
+﻿  test.c
+f:\c数据结构\day9_11\day9_11\test.c(56): warning C4090: “初始化”: 不同的“const”限定符
+  day9_11.vcxproj -> F:\C数据结构\day9_11\Debug\day9_11.exe
