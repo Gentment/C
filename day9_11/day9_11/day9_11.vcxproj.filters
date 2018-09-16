@@ -18,8 +18,11 @@
     <ClCompile Include="test.c">
       <Filter>源文件</Filter>
     </ClCompile>
+<<<<<<< HEAD
     <ClCompile Include="test1.c">
       <Filter>源文件</Filter>
     </ClCompile>
+=======
+>>>>>>> 1197bb40bbcc6749c796bc03f99e1b64a3a2f27d
   </ItemGroup>
 </Project>

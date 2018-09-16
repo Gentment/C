@@ -120,7 +120,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="test.c" />
+<<<<<<< HEAD
     <ClCompile Include="test1.c" />
+=======
+>>>>>>> 1197bb40bbcc6749c796bc03f99e1b64a3a2f27d
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

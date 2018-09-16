@@ -38,6 +38,13 @@ static ListNode * CreateNode(int data)
 
 void ListInsert(ListNode **list,int data)
 {
+<<<<<<< HEAD
+=======
+	//if (*list == NULL)
+	//{
+
+	//}
+>>>>>>> 1197bb40bbcc6749c796bc03f99e1b64a3a2f27d
 	ListNode *newNode = CreateNode(data);
 
 	newNode->next = *list;
@@ -123,8 +130,11 @@ void Prints(int sum)
 	}
 
 }
+<<<<<<< HEAD
 #ifdef 0
 
+=======
+>>>>>>> 1197bb40bbcc6749c796bc03f99e1b64a3a2f27d
 
 int main()
 {
@@ -146,7 +156,10 @@ int main()
 
 }
 
+<<<<<<< HEAD
 #endif // 0
+=======
+>>>>>>> 1197bb40bbcc6749c796bc03f99e1b64a3a2f27d
 
 
 
