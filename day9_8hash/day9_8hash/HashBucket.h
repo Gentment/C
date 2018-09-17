@@ -41,10 +41,12 @@ void ListDestory(Node *first)
 
 void HashBucketDestory(HashBucket *pHB)
 {
+	//需要先释放哈希桶 链表
 	for (int i = 0; i < pHB->capacity; i++)
 	{
 		ListDestory(pHB->array[i]);
 	}
+	//释放哈希桶
 	free(pHB->array);
 }
 Node *HashFind(HashBucket* pHB,KeyType key)
@@ -86,6 +88,8 @@ void IsExtend(HashBucket *pHB)
 	pHB->capacity = newHB->capacity;
 }
 
+//和开放地址不同的是，此时的插入不需要考虑负载因子
+//插入成功返回0，失败返回-1
 int HashInsert(HashBucket *pHB,int key)
 {
 	IsExtend(pHB);
@@ -109,6 +113,8 @@ int HashInsert(HashBucket *pHB,int key)
 	return 1;
 }
 
+
+//删除操作
 int HashBucketRemove(HashBucket *pHB,KeyType key)
 {
 	if (HashFind(pHB, key) == NULL)
@@ -121,8 +127,10 @@ int HashBucketRemove(HashBucket *pHB,KeyType key)
 	{	
 		if (cur->key == key)
 		{
+			//删除
 			if (pre == NULL)
 			{
+				//如果要删除的结点是第一个结点
 				pHB->array[index] = cur->next;
 			}
 			else
@@ -131,9 +139,11 @@ int HashBucketRemove(HashBucket *pHB,KeyType key)
 			}
 			free(cur);
 			pHB->size--;
+			return 0;
 		}
 		pre = cur;
 	}
+	return -1;
 }
 
 void HashBucketPrint(HashBucket *pHB)
@@ -167,11 +177,8 @@ void HashBucketTest()
 	printf("%s\n", HashInsert(&hb, 23)==1 ? "插入成功":"插入失败");
 	printf("%s\n", HashInsert(&hb, 16)==1 ? "插入成功":"插入失败");
 	printf("%s\n", HashInsert(&hb, 19)==1 ? "插入成功":"插入失败");
-	
 
-	/*for (int i = 0; i < 100; i++)
-	{
-		HashInsert(&hb,i*10);
-	}*/
+	printf("%s\n", HashBucketRemove(&hb, 19) == 0 ? "删除成功" : "删除失败");
+
 	HashBucketPrint(&hb);
 }
