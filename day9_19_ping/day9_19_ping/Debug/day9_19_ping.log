@@ -1,0 +1,30 @@
+﻿  ping.c
+f:\c数据结构\day9_19_ping\day9_19_ping\ping.c(48): error C2061: 语法错误: 标识符“in_addr”
+f:\c数据结构\day9_19_ping\day9_19_ping\ping.c(49): error C2059: 语法错误:“}”
+f:\c数据结构\day9_19_ping\day9_19_ping\ping.c(74): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+f:\c数据结构\day9_19_ping\day9_19_ping\ping.c(74): error C2081: “DECODE_RESULT”: 形参表中的名称非法
+f:\c数据结构\day9_19_ping\day9_19_ping\ping.c(74): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+f:\c数据结构\day9_19_ping\day9_19_ping\ping.c(74): error C2059: 语法错误:“)”
+f:\c数据结构\day9_19_ping\day9_19_ping\ping.c(75): error C2054: 在“stDecodeResult”之后应输入“(”
+f:\c数据结构\day9_19_ping\day9_19_ping\ping.c(168): error C2065: “DECODE_RESULT”: 未声明的标识符
+f:\c数据结构\day9_19_ping\day9_19_ping\ping.c(168): error C2146: 语法错误: 缺少“;”(在标识符“stDecodeResult”的前面)
+f:\c数据结构\day9_19_ping\day9_19_ping\ping.c(175): error C2224: “.usSeqNo”的左侧必须具有结构/联合类型
+f:\c数据结构\day9_19_ping\day9_19_ping\ping.c(176): error C2224: “.dwRoundTripTime”的左侧必须具有结构/联合类型
+f:\c数据结构\day9_19_ping\day9_19_ping\ping.c(197): warning C4013: “DecodeIcmpResponse_Ping”未定义；假设外部返回 int
+f:\c数据结构\day9_19_ping\day9_19_ping\ping.c(199): error C2224: “.dwIPaddr”的左侧必须具有结构/联合类型
+f:\c数据结构\day9_19_ping\day9_19_ping\ping.c(199): error C2198: “inet_ntoa”: 用于调用的参数太少
+f:\c数据结构\day9_19_ping\day9_19_ping\ping.c(200): error C2224: “.dwRoundTripTime”的左侧必须具有结构/联合类型
+f:\c数据结构\day9_19_ping\day9_19_ping\ping.c(200): error C2224: “.ttl”的左侧必须具有结构/联合类型
+f:\c数据结构\day9_19_ping\day9_19_ping\ping.c(199): warning C4473: “printf”: 没有为格式字符串传递足够的参数
+  f:\c数据结构\day9_19_ping\day9_19_ping\ping.c(199): note: 占位符和其参数预计 4 可变参数，但提供的却是 2 参数
+  f:\c数据结构\day9_19_ping\day9_19_ping\ping.c(199): note: 缺失的可变参数 3 为格式字符串“%d”所需
+f:\c数据结构\day9_19_ping\day9_19_ping\ping.c(110): error C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  d:\windows kits\10\include\10.0.17134.0\um\winsock2.h(1830): note: 参见“inet_addr”的声明
+f:\c数据结构\day9_19_ping\day9_19_ping\ping.c(114): error C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  d:\windows kits\10\include\10.0.17134.0\um\winsock2.h(2218): note: 参见“gethostbyname”的声明
+f:\c数据结构\day9_19_ping\day9_19_ping\ping.c(140): error C4996: 'WSASocketA': Use WSASocketW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  d:\windows kits\10\include\10.0.17134.0\um\winsock2.h(3415): note: 参见“WSASocketA”的声明
+f:\c数据结构\day9_19_ping\day9_19_ping\ping.c(199): error C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  d:\windows kits\10\include\10.0.17134.0\um\winsock2.h(1848): note: 参见“inet_ntoa”的声明
+f:\c数据结构\day9_19_ping\day9_19_ping\ping.c(227): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  d:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(1274): note: 参见“scanf”的声明
